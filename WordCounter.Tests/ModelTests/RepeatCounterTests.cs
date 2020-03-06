@@ -9,7 +9,7 @@ namespace Wordcounter.Tests
   public class RepeatCounterTests
   {
     [TestMethod]
-    public void GetSentenceArray_GetUserSentenceAndConvertToArray_Array()
+    public void GetSentenceArray_GetUserSentenceAndConvertToArray_Arr()
     {
       //Arrange
       string userSentence = "the quick brown fox jumps over the lazy dog";
@@ -28,6 +28,18 @@ namespace Wordcounter.Tests
       string word = RepeatCounter.GetWord(userWord);
       //Assert
       Assert.AreEqual("the", word);
+    }
+
+    [TestMethod]
+    public void GetRepeatWordFrequency_GetUserWordFrequencyFromUserSentence_Int()
+    {
+      //Arrange
+      string[] sentenceArr = { "the", "quick", "brown", "fox", "jumps", "over", "the", "lazy", "dog" };
+      string word = "the";
+      //Act
+      int frequency = RepeatCounter.GetRepeatWordFrequency(sentenceArr, word);
+      //Assert
+      Assert.AreEqual(1, frequency);
     }
   }
 }

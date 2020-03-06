@@ -21,16 +21,16 @@ namespace WordCounter.Models
       return word;
     }
 
-    // static int search(string[] sentenceArr, string word)
-    // {
-    //   int counter = 0;
+    public static int GetRepeatWordFrequency(string[] sentenceArr, string word)
+    {
+      int frequency = 0;
 
-    //   for (int i = 0; i < sentenceArr.Length; i++)
-    //   if (word.Equals(sentenceArr[i]))
-    //   {
-    //     counter++;
-    //     return counter;
-    //   }
-    // }
+      for (int i = 0; i < sentenceArr.Length; i++)
+      if (word.Equals(sentenceArr[i]))
+      {
+        frequency++;
+      }
+      return frequency;
+    }
   }
 }
