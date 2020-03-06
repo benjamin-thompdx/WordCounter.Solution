@@ -16,7 +16,7 @@ namespace Wordcounter.Tests
       //Act
       string[] sentenceArr = RepeatCounter.GetSentenceArray(userSentence);
       //Assert
-      Assert.AreEqual("the", sentenceArr[1]);
+      Assert.AreEqual("the", sentenceArr[0]);
     }
   }
 }
