@@ -15,6 +15,12 @@ namespace WordCounter.Models
       return sentenceArr;
     }
 
+    public static string GetWord(string userWord)
+    {
+      string word = userWord;
+      return word;
+    }
+
     // static int search(string[] sentenceArr, string word)
     // {
     //   int counter = 0;

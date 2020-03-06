@@ -18,5 +18,16 @@ namespace Wordcounter.Tests
       //Assert
       Assert.AreEqual("the", sentenceArr[0]);
     }
+
+    [TestMethod]
+    public void GetWord_GetUserWord_String()
+    {
+      //Arrange
+      string userWord = "the";
+      //Act
+      string word = RepeatCounter.GetWord(userWord);
+      //Assert
+      Assert.AreEqual("quick", word);
+    }
   }
 }
