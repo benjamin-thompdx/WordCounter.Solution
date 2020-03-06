@@ -6,15 +6,15 @@
 
 ## Description
 
-_A program that gathers both a word and sentence from a user, then checks how frequently the word appears in the sentence (checks for full word matches only)._
+_An application that gathers both a word and sentence from a user, then checks how frequently the word appears in the sentence (checks for full word matches only)._
 
 ## Project Specifications
 
 | Behavior | Input | Output |
 |---|:---:|:---:|
-|A user inputs a word and the program collects the response|"the"|NA|
-|A user inputs a sentence and the program collects the response|"the quick brown fox jumps over the lazy dog"|NA|
-|The program checks how frequently the user's word (full word matches only) appears in the user's sentence|"the", "the"|2|
+|A user inputs a word and the application collects the response|"the"|NA|
+|A user inputs a sentence and the application collects the response|"the quick brown fox jumps over the lazy dog"|NA|
+|The application checks how frequently the user's word (full word matches only) appears in the user's sentence|"the", "the"|2|
 
 ## Setup/Installation Requirements
 
