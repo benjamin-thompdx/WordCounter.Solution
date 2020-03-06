@@ -13,10 +13,8 @@ _An application that gathers both a word and sentence from a user, then checks h
 | Behavior | Input | Output |
 |---|:---:|:---:|
 |A user inputs a sentence and the application collects the response|"the quick brown fox jumps over the lazy dog"|"the quick brown fox jumps over the lazy dog"|
-|The Application verifies that user's sentence only contains letters|"the 6 quick brown foxes jumps over the 2 lazy dogs"|false|
 |The application converts the user's sentence into an array of strings|"the quick brown fox jumps over the lazy dog"|{ "the", "quick", "brown", "fox", "jumps", "over", "the", "lazy", "dog" }|
 |A user inputs a word and the application collects the response|"the"|"the"|
-|The Application verifies that user's word only contains letters|"6"|false|
 |The application calculates the frequency the user's word (full word matches only) within the user's sentence|"the", "the"|2|
 
 ## Setup/Installation Requirements

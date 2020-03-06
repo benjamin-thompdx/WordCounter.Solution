@@ -19,14 +19,6 @@ namespace Wordcounter.Tests
       Assert.AreEqual("the quick brown fox jumps over the lazy dog", sentence);
     }
 
-    // [TestMethod]
-    // public bool SentenceContainsOnlyLetters_VerifySentenceStringOnlyContainsLetters_True()
-    // {
-    //   //Arrange
-    //   //Act
-    //   //Assert
-    // }
-
     [TestMethod]
     public void GetSentenceArray_GetUserSentenceAndConvertToArray_Arr()
     {
@@ -48,14 +40,6 @@ namespace Wordcounter.Tests
       //Assert
       Assert.AreEqual("the", word);
     }
-
-    // [TestMethod]
-    // public bool WordContainsOnlyLetters_VerifyWordStringOnlyContainsLetters_True()
-    // {
-    //   //Arrange
-    //   //Act
-    //   //Assert
-    // }
 
     [TestMethod]
     public void GetRepeatWordFrequency_GetUserWordFrequencyFromUserSentence_Int()
