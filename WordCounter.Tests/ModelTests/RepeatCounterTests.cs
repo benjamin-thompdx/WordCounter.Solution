@@ -1,4 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
+using System.Collections.Generic;
 using WordCounter.Models;
 
 namespace Wordcounter.Tests
@@ -7,10 +9,14 @@ namespace Wordcounter.Tests
   public class RepeatCounterTests
   {
     [TestMethod]
-    public void NameOfMethodWeAreTesting_DescriptionOfBehavior_ExpectedReturnValue()
+    public void GetSentenceArray_GetUserSentenceAndConvertToArray_Array()
     {
-    // any necessary logic to prep for test; instantiating new classes, etc.
-    Assert.AreEqual(EXPECTED RESULT, CODE TO TEST);
+      //Arrange
+      string userSentence = "the quick brown fox jumps over the lazy dog";
+      //Act
+      string[] sentenceArr = RepeatCounter.GetSentenceArray(userSentence);
+      //Assert
+      Assert.AreEqual("the", sentenceArr[1]);
     }
   }
 }

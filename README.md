@@ -12,8 +12,8 @@ _An application that gathers both a word and sentence from a user, then checks h
 
 | Behavior | Input | Output |
 |---|:---:|:---:|
-|A user inputs a word and the application collects the response|"the"|NA|
 |A user inputs a sentence and the application collects the response|"the quick brown fox jumps over the lazy dog"|NA|
+|A user inputs a word and the application collects the response|"the"|NA|
 |The application checks how frequently the user's word (full word matches only) appears in the user's sentence|"the", "the"|2|
 
 ## Setup/Installation Requirements
