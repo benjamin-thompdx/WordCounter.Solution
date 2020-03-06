@@ -39,7 +39,7 @@ namespace Wordcounter.Tests
       //Act
       int frequency = RepeatCounter.GetRepeatWordFrequency(sentenceArr, word);
       //Assert
-      Assert.AreEqual(1, frequency);
+      Assert.AreEqual(2, frequency);
     }
   }
 }
