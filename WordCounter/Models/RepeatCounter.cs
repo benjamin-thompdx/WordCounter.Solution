@@ -10,7 +10,6 @@ namespace WordCounter.Models
     
     public static string[] GetSentenceArray(string userSentence)
     {
-      // userSentence = "the quick brown fox jumps over the lazy dog";
       string[] sentenceArr = userSentence.Split(' ');
       return sentenceArr;
     }
