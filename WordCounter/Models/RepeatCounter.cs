@@ -7,6 +7,12 @@ namespace WordCounter.Models
   {
     public string[] SentenceArr { get; set; }
     public string Word { get; set; }
+
+    public static string GetSentence(string userSentence)
+    {
+      string sentence = userSentence;
+      return sentence;
+    }
     
     public static string[] GetSentenceArray(string userSentence)
     {

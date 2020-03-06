@@ -9,6 +9,25 @@ namespace Wordcounter.Tests
   public class RepeatCounterTests
   {
     [TestMethod]
+    public void GetSentence_GetUserSentence_String()
+    {
+      //Arrange
+      string userSentence = "the quick brown fox jumps over the lazy dog";
+      //Act
+      string sentence = RepeatCounter.GetSentence(userSentence);
+      //Assert
+      Assert.AreEqual("the brown fox jumps over the lazy dog", sentence);
+    }
+
+    // [TestMethod]
+    // public bool SentenceContainsOnlyLetters_VerifySentenceStringOnlyContainsLetters_True()
+    // {
+    //   //Arrange
+    //   //Act
+    //   //Assert
+    // }
+
+    [TestMethod]
     public void GetSentenceArray_GetUserSentenceAndConvertToArray_Arr()
     {
       //Arrange
@@ -17,14 +36,6 @@ namespace Wordcounter.Tests
       string[] sentenceArr = RepeatCounter.GetSentenceArray(userSentence);
       //Assert
       Assert.AreEqual("the", sentenceArr[0]);
-    }
-
-    [TestMethod]
-    public bool SentenceContainsOnlyLetters_VerifySentenceStringOnlyContainsLetters_True()
-    {
-      //Arrange
-      //Act
-      //Assert
     }
 
     [TestMethod]
@@ -37,6 +48,14 @@ namespace Wordcounter.Tests
       //Assert
       Assert.AreEqual("the", word);
     }
+
+    // [TestMethod]
+    // public bool WordContainsOnlyLetters_VerifyWordStringOnlyContainsLetters_True()
+    // {
+    //   //Arrange
+    //   //Act
+    //   //Assert
+    // }
 
     [TestMethod]
     public void GetRepeatWordFrequency_GetUserWordFrequencyFromUserSentence_Int()
