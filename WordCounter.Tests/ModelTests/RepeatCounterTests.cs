@@ -27,7 +27,7 @@ namespace Wordcounter.Tests
       //Act
       string word = RepeatCounter.GetWord(userWord);
       //Assert
-      Assert.AreEqual("quick", word);
+      Assert.AreEqual("the", word);
     }
   }
 }
