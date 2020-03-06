@@ -20,6 +20,14 @@ namespace Wordcounter.Tests
     }
 
     [TestMethod]
+    public bool SentenceContainsOnlyLetters_VerifySentenceStringOnlyContainsLetters_True()
+    {
+      //Arrange
+      //Act
+      //Assert
+    }
+
+    [TestMethod]
     public void GetWord_GetUserWord_String()
     {
       //Arrange
