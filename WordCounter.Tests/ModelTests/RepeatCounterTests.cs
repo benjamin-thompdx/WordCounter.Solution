@@ -16,7 +16,7 @@ namespace Wordcounter.Tests
       //Act
       string sentence = RepeatCounter.GetSentence(userSentence);
       //Assert
-      Assert.AreEqual("the brown fox jumps over the lazy dog", sentence);
+      Assert.AreEqual("the quick brown fox jumps over the lazy dog", sentence);
     }
 
     // [TestMethod]
