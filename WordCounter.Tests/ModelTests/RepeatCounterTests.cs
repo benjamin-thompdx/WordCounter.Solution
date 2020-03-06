@@ -4,7 +4,7 @@ using WordCounter.Models;
 namespace Wordcounter.Tests
 {
   [TestClass]
-  public class CalculatorTests
+  public class RepeatCounterTests
   {
     [TestMethod]
     public void NameOfMethodWeAreTesting_DescriptionOfBehavior_ExpectedReturnValue()

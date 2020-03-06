@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace WordCounter.Models
 {
-  public class Calculator
+  public class RepeatCounter
   {
     // properties, constructors, methods, etc. go here
   }
