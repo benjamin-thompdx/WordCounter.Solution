@@ -34,8 +34,8 @@ namespace Wordcounter.Tests
     public void GetRepeatWordFrequency_GetUserWordFrequencyFromUserSentence_Int()
     {
       //Arrange
-      string[] sentenceArr = { "the", "them", "quick", "brown", "fox", "jumps", "over", "the", "lazy", "dog" };
-      string word = "the";
+      string[] sentenceArr = { "the", "them", "they", "quick", "brown", "fox", "jumps", "over", "the", "lazy", "dog" };
+      string word = "The";
       //Act
       int frequency = RepeatCounter.GetRepeatWordFrequency(sentenceArr, word);
       //Assert
