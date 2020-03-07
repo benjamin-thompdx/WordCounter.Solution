@@ -1,13 +1,7 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-
 namespace WordCounter.Models
 {
   public class RepeatCounter
   {
-    public string[] SentenceArr { get; set; }
-    public string Word { get; set; }
 
     public static string GetSentence(string userSentence)
     {
