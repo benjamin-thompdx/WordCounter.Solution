@@ -13,25 +13,6 @@ namespace WordCounter.Models
       Word = word;
     }
 
-
-    // public string GetSentence()
-    // {
-    //   string sentence = userSentence;
-    //   return sentence;
-    // }
-    
-    // public string[] GetSentenceArray(string userSentence)
-    // {
-    //   string[] sentenceArr = userSentence.Split(' ');
-    //   return sentenceArr;
-    // }
-
-    // public string GetWord(string userWord)
-    // {
-    //   string word = userWord;
-    //   return word;
-    // }
-
     public int GetRepeatWordFrequency()
     {
       int frequency = 0;
