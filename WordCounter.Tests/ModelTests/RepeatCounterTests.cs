@@ -46,11 +46,23 @@ namespace Wordcounter.Tests
     {
       //Arrange
       RepeatCounter testRepeatCounter = new RepeatCounter("the quick brown fox jumps over the lazy dog", "the");
-      string[] sentenceArr = { "the", "them", "they", "quick", "brown", "fox", "jumps", "over", "the", "lazy", "dog" };
+      string[] sentenceArr = testRepeatCounter.SentenceArr;
       //Act
       int frequency = testRepeatCounter.GetRepeatWordFrequency();
       //Assert
       Assert.AreEqual(2, frequency);
+    }
+
+    [TestMethod]
+    public void NoPartialWordFrequency_PartialWordFrequencyEqualsZero_Int()
+    {
+      //Arrange
+      RepeatCounter testRepeatCounter = new RepeatCounter("then quick brown fox jumps over there lazy dog", "the");
+      string[] sentenceArr = testRepeatCounter.SentenceArr;
+      //Act
+      int frequency = testRepeatCounter.NoPartialWordFrequency();
+      //Assert
+      Assert.AreEqual(1, frequency);
     }
   }
 }
