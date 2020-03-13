@@ -62,7 +62,7 @@ namespace Wordcounter.Tests
       //Act
       int frequency = testRepeatCounter.NoPartialWordFrequency();
       //Assert
-      Assert.AreEqual(1, frequency);
+      Assert.AreEqual(0, frequency);
     }
   }
 }
