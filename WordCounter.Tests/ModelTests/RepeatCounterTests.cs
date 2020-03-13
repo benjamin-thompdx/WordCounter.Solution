@@ -14,7 +14,7 @@ namespace Wordcounter.Tests
       //Arrange
       RepeatCounter testRepeatCounter = new RepeatCounter("the quick brown fox jumps over the lazy dog", "the");
       //Act
-      string sentence = RepeatCounter.GetSentence(testRepeatCounter.Sentence);
+      string sentence = testRepeatCounter.Sentence;
       //Assert
       Assert.AreEqual("the quick brown fox jumps over the lazy dog", sentence);
     }
@@ -25,7 +25,7 @@ namespace Wordcounter.Tests
       //Arrange
       RepeatCounter testRepeatCounter = new RepeatCounter("the quick brown fox jumps over the lazy dog", "the");
       //Act
-      string[] sentenceArr = RepeatCounter.GetSentenceArray(testRepeatCounter.Sentence);
+      string[] sentenceArr = testRepeatCounter.SentenceArr;
       //Assert
       Assert.AreEqual("the", sentenceArr[0]);
     }
@@ -36,7 +36,7 @@ namespace Wordcounter.Tests
       //Arrange
       RepeatCounter testRepeatCounter = new RepeatCounter("the quick brown fox jumps over the lazy dog", "the");
       //Act
-      string word = RepeatCounter.GetWord(testRepeatCounter.Word);
+      string word = testRepeatCounter.Word;
       //Assert
       Assert.AreEqual("the", word);
     }
@@ -54,9 +54,3 @@ namespace Wordcounter.Tests
     }
   }
 }
-
-    public RepeatCounterTests(string userSentece, string userWord)
-    {
-      userSentece = "the quick brown fox jumps over the lazy dog";
-      userWord = "the";
-    }

@@ -13,6 +13,8 @@ namespace WordCounter.Models
       Word = word;
     }
 
+    
+
     public int GetRepeatWordFrequency()
     {
       int frequency = 0;
