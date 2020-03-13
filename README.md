@@ -14,8 +14,9 @@ _An application that gathers both a word and sentence from a user, then checks h
 |---|:---:|:---:|
 |A user inputs a sentence and the application collects the response|"the quick brown fox jumps over the lazy dog"|"the quick brown fox jumps over the lazy dog"|
 |The application converts the user's sentence into an array of strings|"the quick brown fox jumps over the lazy dog"|{ "the", "quick", "brown", "fox", "jumps", "over", "the", "lazy", "dog" }|
-|A user inputs a word and the application collects the response|"the"|"the"|
+|A user inputs a word and the application collects the response and if the user's word is a full word match, the application displays the user word's frequency|"the"|"the"|
 |The application calculates the frequency the user's word (full word matches only) within the user's sentence|"the", "the"|2|
+|A user inputs a word and the application collects the response and if the user's word is not included in the user's sentence or is a partial match, the application displays a word frquency of 0|user sentence: "there are big mountains in Montana", user word: "the"|0|
 
 ## Setup/Installation Requirements
 
